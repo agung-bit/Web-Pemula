@@ -5,10 +5,8 @@
 }
 header {
 	height:70px;
-	border:1px solid;
 }
 header h1 {
-	border:1px solid;
 	display: inline-block;
 	padding:13px 23px;
 	float: left;
@@ -21,11 +19,9 @@ header h1 a:hover {
 	color:#FF5733;
 }
 header ul {
-	border:1px;
 	float: right;
 }
 header ul li {
-	border:1px solid;
 	padding:24px;
 	display: inline-block;
 }
@@ -41,7 +37,6 @@ header ul li a:hover {
 .container {
 	width:90%;
 	margin:0 auto;
-	border:1px solid;
 }
 .container:after {
 	content: '';
@@ -52,7 +47,6 @@ header ul li a:hover {
 	float: right;
 	display: none;
 	padding:18px;
-	border: 1px solid;
 }
 .menu-mobile:hover{
 	cursor: pointer;
