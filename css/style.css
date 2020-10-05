@@ -48,3 +48,47 @@ header ul li a:hover {
 	display: block;
 	clear: both;
 }
+.menu-mobile {
+	float: right;
+	display: none;
+	padding:18px;
+	border: 1px solid;
+}
+.menu-mobile:hover{
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.slidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 300px;
+	background-color: rgba(60, 199, 251, 0.9);
+	transition: 0.3s;
+}
+.slidebar ul li a {
+	color: white;
+}
+.slidebar ul li {
+	padding: 24px;
+	transition: 0.3s;
+	transition-property:background-color;
+}
+.slidebar ul li:hover {
+	background-color:#FB783C;
+}
+#check:checked ~ .slidebar {
+	left:0;
+}
+
+@media (max-width: 768px){
+	.menu-mobile {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+}
