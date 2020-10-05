@@ -32,14 +32,14 @@ header ul li a {
 header ul li a:hover {
 	color:#FF5733;
 }
-* {
+a {
 	text-decoration: none;
 }
 .container {
 	width:90%;
 	margin:0 auto;
 }
-.container:after {
+.container::after {
 	content: '';
 	display: block;
 	clear: both;
@@ -55,7 +55,7 @@ header ul li a:hover {
 #check {
 	display: none;
 }
-.slidebar {
+.sidebar {
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -65,18 +65,18 @@ header ul li a:hover {
 	transition: 0.3s;
 	z-index: 9999;
 }
-.slidebar ul li a {
+.sidebar ul li a {
 	color: white;
 }
-.slidebar ul li {
+.sidebar ul li {
 	padding: 24px;
 	transition: 0.3s;
 	transition-property:background-color;
 }
-.slidebar ul li:hover {
+.sidebar ul li:hover {
 	background-color:#FB783C;
 }
-#check:checked ~ .slidebar {
+#check:checked ~ .sidebar {
 	left:0;
 }
 .banner {
