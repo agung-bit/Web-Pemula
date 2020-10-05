@@ -2,6 +2,7 @@
 	padding:0;
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
+	color: black;
 }
 header {
 	height:70px;
@@ -79,6 +80,7 @@ header ul li a:hover {
 }
 .banner {
 	background-color:#3CAFFB;
+	padding:140px 0;
 }
 section {
 	padding:50px 0;
@@ -87,10 +89,53 @@ section {
 	width: 90px;
 	border-radius: 10px;
 	box-shadow: 0 3px 5px #ddd;
+	margin-bottom: 10px;
 }
 .banner h2,
-.banner p {
+.banner p,
+.banner span {
 	color: #fff;
+}
+.banner h2{
+	margin-bottom: 10px;
+}
+.banner p {
+	font-size: 18px;
+}
+.banner-left {
+	padding-left: 24px;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position:relative;
+}
+section h3::before {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color:#ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color:red;
+	left: calc(50% - 20px);
+}
+#about p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
 }
 
 @media (max-width: 768px){
