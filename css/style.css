@@ -77,6 +77,21 @@ header ul li a:hover {
 #check:checked ~ .slidebar {
 	left:0;
 }
+.banner {
+	background-color:#3CAFFB;
+}
+section {
+	padding:50px 0;
+}
+.banner img {
+	width: 90px;
+	border-radius: 10px;
+	box-shadow: 0 3px 5px #ddd;
+}
+.banner h2,
+.banner p {
+	color: #fff;
+}
 
 @media (max-width: 768px){
 	.menu-mobile {
